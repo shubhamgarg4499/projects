@@ -18,7 +18,7 @@ const persistLogin = require("../controllers/PersistLogin.controller");
 // const { filterProduct } = require("../controllers/Filter.controller");
 
 router.route('/getAllReviews/review').get(getAllReviews)
-router.route('/getAllProduct').get(asyncHandler(checkAccessToken), getAllProduct)
+router.route('/getAllProduct').get(getAllProduct)
 router.route('/product').post(filterProduct)
 
 router.route('/removeAdmin').post(asyncHandler(checkAccessToken), asyncHandler(checkIsAdmin), removeUserAdmin)
