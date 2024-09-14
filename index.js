@@ -13,9 +13,9 @@ app.use(cors({
 }))
 connectDatabase()
     .catch(error => console.log(error.message))
-app.get('/', (req, res) => {
-    res.send("hii")
-})
+// app.get('/', (req, res) => {
+//     res.send("hii")
+// })
 const router = require('./Routes/User.routes.js');
 app.use('/api/v1/user', router)
 app.use(ErrorMiddleware)
