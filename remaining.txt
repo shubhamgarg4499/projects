@@ -1,0 +1,10 @@
+Rating & Reviews
+        All products average review
+        Average Product Rating based on product_id
+        Product Review based on product_id
+
+Orders
+
+Images in product
+images in Review
+Profile image

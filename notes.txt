@@ -1,0 +1,8 @@
+user(user_id,email,password)
+products(product_id,product_name,price,product_stock,catagories_id,sub_categories_id,)
+catagories(men,women,child)
+sub-catagories(clothes,accessories,watch)
+orders(order_status, total_amount,user_id,product_id)
+
+
+
