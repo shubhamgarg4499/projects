@@ -5,6 +5,9 @@ const ErrorMiddleware = require("./Middlewares/Error.Middleware.js");
 const cookieParser = require('cookie-parser')
 const cors = require('cors')
 const path = require('path')
+require("dotenv").config()
+require("dotenv").config()
+const PORT =process.env.PORT
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
@@ -20,6 +23,6 @@ const router = require('./Routes/User.routes.js');
 app.use('/api/v1/user', router)
 app.use(ErrorMiddleware)
 
-app.listen(4000, () => {
-    console.log('Listening on 4000');
+app.listen(PORT, () => {
+    console.log('Listening on'+PORT);
 })
